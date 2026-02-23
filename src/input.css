@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+/* fonts link */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Comfortaa:wght@300..700&display=swap'); */
+
+@theme {
+  --color-main: #191919;
+  --color-muted: #898989;
+  --color-primry: #1096b5;
+
+  /* fonts */
+  /* font-family: "Baloo Bhaina 2", sans-serif; */
+  --font-Baloo: "Baloo Bhaina 2", sans-serif;
+  /* font-family: "Comfortaa", sans-serif; */
+  --font-Comfortaa: "Comfortaa", sans-serif;
+  /* font-family: "Patrick Hand", cursive; */
+  --font-Patrick: "Patrick Hand", cursive;
+
+
+  --breakpoint-xs:412px;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  body {
+    @apply font-Comfortaa text-main;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 3rem; /* 48px */
+  }
+  h2 {
+    font-size: 2.25rem; /* 36px */
+  }
+  h3 {
+    font-size: 1.875rem; /* 30px */
+  }
+  h4 {
+    font-size: 1.5rem; /* 24px */
+  }
+  h5 {
+    font-size: 1.25rem; /* 20px */
+  }
+  h6 {
+    font-size: 1.125rem; /* 18px */
+  }
+}
+
+@utility row {
+  @apply flex flex-row items-center gap-2;
+}
+
+@utility col {
+  @apply flex flex-col items-center gap-2;
+}
+
+@utility container {
+  @apply mx-auto px-5;
+}
