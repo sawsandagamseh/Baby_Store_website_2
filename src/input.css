@@ -79,3 +79,17 @@
 @utility container {
   @apply mx-auto px-5;
 }
+
+
+@utility shopNow {
+  
+
+    background-color: #FFE926;
+    color: black;
+    border-radius: 100px;
+    padding: 5px 13px;
+    border: 2px solid #FFE926 ;
+    transition: all 0.1s;
+
+}
+
