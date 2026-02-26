@@ -28,14 +28,14 @@
         <section
             class="top-header py-5 bg-[url('../assets/image/public/toolbar.webp')] bg-cover bg-center bg-no-repeat ">
             <div class="container mx-auto max-sm:px-2">
-                <div class="row justify-between  text-white text-[16px]   ">
+                <div class="row justify-between  text-white lg:text-[14px] ">
                     <div class="row">
                         <img src="./assets/image/public/car.webp" alt="logo" />
-                        <p class="">Free free shipping with over $150</p>
+                        <p class=" ">Free free shipping with over $150</p>
                     </div>
-                    <div class="sm:hidden block"> <i class="fa-solid fa-bars"></i></div>
+                    <!-- <div class="sm:hidden block"> <i class="fa-solid fa-bars"></i></div> -->
 
-                    <div class="row max-sm:hidden gap-10 max-xs:gap-2 max-sm:gap-5 ">
+                    <div class="row  gap-10 max-xs:gap-2 max-sm:gap-5 ">
                         <button class="hover:cursor-pointer hover:scale-80 transition duration-300">Login</button>
                         <button class="hover:cursor-pointer hover:scale-80 transition duration-300">Register</button>
                     </div>
@@ -43,14 +43,14 @@
             </div>
 
         </section>
-        <section class="buttom-header py-3 ">
+        <section class="buttom-header py-5 ">
             <div class="container ">
                 <div class="row justify-between  text-[16px] ">
                     <div class="">
                         <img class="" src="./assets/image/public/logo.webp" alt="Raindbow logo" />
                     </div>
-                    <nav class="">
-                        <ul class="row md:gap-8 max-md:text-[12px] gap-14">
+                    <nav class="max-md:hidden">
+                        <ul class="row md:gap-8 max-md:text-[12px] max-lg:text-[14px] gap-14">
                             <li class="hover:text-primry hover:cursor-pointer">
                                 Home
                             </li>
@@ -76,13 +76,13 @@
                         </div>
                         <div class=" ">
 
-                            <form action="" class="border-2 border-[#b3b3b3] rounded-full h-10 relative  ">
-                                <input type="text  " class="h-full outline-0 border-0 ps-3">
+                            <form action="" class="border-2 border-[#b3b3b3] rounded-full h-10 relative  max-lg:w-30  ">
+                                <input type="text  " class="h-full outline-0 border-0 max-lg:w-30">
                                 <button type="submit" class="bg-[#0f83b2] p-2.5 rounded-full flex items-center justify-center absolute right-0 bottom-0 "> <img
                                         src="./assets/image/public/search.svg" alt="search"></button>
                             </form>
                         </div>
-                        <div class="hidden ">
+                        <div class="md:hidden">
                             <svg width="20px" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                                 <path
@@ -103,7 +103,7 @@
         <!-- Start Hero Section -->
         <section
             class="flex items-center h-[75vh]  bg-[url('../assets/image/public/hero.webp')] bg-cover  bg-no-repeat">
-            <div class="container">
+            <div class="container ">
                 <div class=" row justify-end   ">
                     <div class="col gap-2 items-start   ">
                         <h1 class="text-primry [text-shadow:2px_2px_#fff] font-extrabold md:text-[65px] sm:text-[40px] font-Baloo">Play,
@@ -117,6 +117,95 @@
         </section>
 
         <!-- End Hero Section -->
+         <!-- start Perfect Toy Section -->
+        <section class="perfectToy py-10">
+            <div class="container col items-center gap-5">
+                <h2 class="latoFont">Find The Perfect Toy</h2>
+                <p>Our Colection</p>
+
+                <div class=" grid  max-sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 items-center gap-5">
+
+                    <div class="perfect-product col items-center gap-5">
+                        <div class="cloud-img relative">
+                            <img src="./assets/image/perfectToy/cloud1.webp" alt="cloud background image">
+                            <div class="perfectProductImg absolute top-[20px] left-[45px]"> <img src="./assets/image/perfectToy/Brick.webp" alt="Brick">
+                            </div>
+                        </div>
+
+                        <h5>playset</h5>
+                    </div>
+
+                    <div class="perfect-product col items-center gap-5">
+                        <div class="cloud-img relative ">
+                            <img src="./assets/image/perfectToy/cloud2.webp" alt="cloud background image">
+                            <div class="perfectProductImg absolute top-[20px] left-[45px]"> <img src="./assets/image/perfectToy/Teddy Bear.webp"
+                                    alt="Brick">
+                            </div>
+                        </div>
+
+                        <h5>Control Toys</h5>
+                    </div>
+
+
+                    <div class="perfect-product col items-center  gap-5">
+                        <div class="cloud-img relative">
+                            <img src="./assets/image/perfectToy/cloud3.webp" alt="cloud background image">
+                            <div class="perfectProductImg absolute top-[20px] left-[45px]"> <img src="./assets/image/perfectToy/Toy Car.webp"
+                                    alt="Brick">
+                            </div>
+                        </div>
+
+                        <h5>Educational Toys</h5>
+                    </div>
+
+
+                    <div class="perfect-product col items-center gap-5">
+                        <div class="cloud-img relative">
+                            <img src="./assets/image/perfectToy/cloud4.webp" alt="cloud background image">
+                            <div class="perfectProductImg absolute top-[20px] left-[45px]"> <img src="./assets/image/perfectToy/Rocking Horse.webp"
+                                    alt="Brick">
+                            </div>
+                        </div>
+
+                        <h5>Eco- Friendly Toys</h5>
+                    </div>
+
+
+                    <div class="perfect-product col items-center gap-5">
+                        <div class="cloud-img relative">
+                            <img src="./assets/image/perfectToy/Vector (8).webp" alt="cloud background image">
+                            <div class="perfectProductImg absolute top-[20px] left-[45px]"> <img src="./assets/image/perfectToy/Brick.webp" alt="Brick">
+                            </div>
+                        </div>
+
+                        <h5>Stuffed Toys</h5>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </section>
+        <!-- End Perfect Toy Section -->
+
+
+         <!-- start Top Picks Section -->
+        <section class="top-picks py-5">
+            <div class="conntainer">
+                <div class="topPicks-Content col items-center">
+                    <h2>Top Picks For Your Littel Ones</h2>
+                   
+                    <div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+        <!-- End Top Picks Section -->
     </main>
 </body>
 
