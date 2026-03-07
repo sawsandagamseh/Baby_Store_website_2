@@ -78,7 +78,7 @@
 }
 
 @utility container {
-@apply mx-auto max-sm:px-0  max-md:px-1 md:px-2 lg:px-3 ;
+@apply mx-auto max-sm:px-0  max-md:px-1 md:px-2 lg:px-6 ;
 }
 
 
