@@ -1229,14 +1229,26 @@
   .relative {
     position: relative;
   }
+  .top-1 {
+    top: calc(var(--spacing) * 1);
+  }
+  .top-1\/2 {
+    top: calc(1/2 * 100%);
+  }
   .top-\[20px\] {
     top: 20px;
   }
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
+  .right-5 {
+    right: calc(var(--spacing) * 5);
+  }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
+  }
+  .left-5 {
+    left: calc(var(--spacing) * 5);
   }
   .left-\[45px\] {
     left: 45px;
@@ -1513,6 +1525,14 @@
       font-weight: 600;
     }
   }
+  .carousel-item {
+    @layer daisyui.l1.l2.l3 {
+      box-sizing: content-box;
+      display: flex;
+      flex: none;
+      scroll-snap-align: start;
+    }
+  }
   .badge {
     @layer daisyui.l1.l2.l3 {
       display: inline-flex;
@@ -1581,6 +1601,20 @@
       font-size: var(--card-fs, 0.875rem);
       :where(p) {
         flex-grow: 1;
+      }
+    }
+  }
+  .carousel {
+    @layer daisyui.l1.l2.l3 {
+      display: inline-flex;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      @media (prefers-reduced-motion: no-preference) {
+        scroll-behavior: smooth;
+      }
+      &::-webkit-scrollbar {
+        display: none;
       }
     }
   }
@@ -1684,6 +1718,14 @@
   .table {
     display: table;
   }
+  .btn-circle {
+    @layer daisyui.l1.l2 {
+      border-radius: calc(infinity * 1px);
+      padding-inline: calc(0.25rem * 0);
+      width: var(--size);
+      height: var(--size);
+    }
+  }
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
@@ -1696,11 +1738,62 @@
   .h-\[75vh\] {
     height: 75vh;
   }
+  .h-\[200px\] {
+    height: 200px;
+  }
   .h-\[333px\] {
     height: 333px;
   }
   .h-full {
     height: 100%;
+  }
+  .min-h-\[200px\] {
+    min-height: 200px;
+  }
+  .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
+  .w-30 {
+    width: calc(var(--spacing) * 30);
+  }
+  .w-\[0\%px\] {
+    width: 0%px;
+  }
+  .w-\[1\%px\] {
+    width: 1%px;
+  }
+  .w-\[20\%px\] {
+    width: 20%px;
+  }
+  .w-\[25\%\] {
+    width: 25%;
+  }
+  .w-\[25\%px\] {
+    width: 25%px;
+  }
+  .w-\[25\] {
+    width: 25;
+  }
+  .w-\[30\%\] {
+    width: 30%;
+  }
+  .w-\[30\%px\] {
+    width: 30%px;
+  }
+  .w-\[30\] {
+    width: 30;
+  }
+  .w-\[40\%\] {
+    width: 40%;
+  }
+  .w-\[300\] {
+    width: 300;
+  }
+  .w-\[300px\] {
+    width: 300px;
+  }
+  .w-\[400\%\] {
+    width: 400%;
   }
   .w-full {
     width: 100%;
@@ -1719,6 +1812,14 @@
   }
   .border-collapse {
     border-collapse: collapse;
+  }
+  .-translate-y-1 {
+    --tw-translate-y: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1\/2 {
+    --tw-translate-y: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
@@ -1762,6 +1863,13 @@
   }
   .resize {
     resize: both;
+  }
+  .carousel-center {
+    @layer daisyui.l1.l2 {
+      .carousel-item {
+        scroll-snap-align: center;
+      }
+    }
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -1831,6 +1939,15 @@
     border: 2px solid #FFE926;
     transition: all 0.1s;
   }
+  .rounded {
+    border-radius: 0.25rem;
+  }
+  .rounded-box {
+    border-radius: var(--radius-box);
+  }
+  .rounded-box {
+    border-radius: var(--radius-box);
+  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
@@ -1854,6 +1971,12 @@
   }
   .bg-\[\#0f83b2\] {
     background-color: #0f83b2;
+  }
+  .bg-\[\#FAEFEF\] {
+    background-color: #FAEFEF;
+  }
+  .bg-\[\#\] {
+    background-color: #;
   }
   .bg-\[\#e1eef8\] {
     background-color: #e1eef8;
@@ -1942,6 +2065,12 @@
   .p-10 {
     padding: calc(var(--spacing) * 10);
   }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .px-20 {
+    padding-inline: calc(var(--spacing) * 20);
+  }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
   }
@@ -1960,6 +2089,9 @@
   .py-50 {
     padding-block: calc(var(--spacing) * 50);
   }
+  .pt-10 {
+    padding-top: calc(var(--spacing) * 10);
+  }
   .pr-6 {
     padding-right: calc(var(--spacing) * 6);
   }
@@ -1971,6 +2103,9 @@
   }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
+  }
+  .pb-20 {
+    padding-bottom: calc(var(--spacing) * 20);
   }
   .pl-10 {
     padding-left: calc(var(--spacing) * 10);
@@ -2670,6 +2805,21 @@
     background-position-x: -115%;
   }
 }
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
@@ -2783,6 +2933,9 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
       --tw-rotate-x: initial;
       --tw-rotate-y: initial;
       --tw-rotate-z: initial;
