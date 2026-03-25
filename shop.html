@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- Googel fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Comfortaa:wght@300..700&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="src/output.css">
+
+
+    <!-- font awaseom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+
+<body class="font-Comfortaa bg-white">
+
+    <!-- Start Header Section -->
+    <header>
+        <section
+            class="top-header py-5 bg-[url('../assets/image/public/toolbar.webp')] bg-cover bg-center bg-no-repeat ">
+            <div class="container mx-auto max-sm:px-2">
+                <div class="row justify-between  text-white lg:text-[14px] ">
+                    <div class="row">
+                        <img src="./assets/image/public/car.webp" alt="logo" />
+                        <p class=" ">Free free shipping with over $150</p>
+                    </div>
+                    <!-- <div class="sm:hidden block"> <i class="fa-solid fa-bars"></i></div> -->
+
+                    <div class="row  gap-10 max-xs:gap-2 max-sm:gap-5 ">
+                        <button class="hover:cursor-pointer hover:scale-80 transition duration-300">Login</button>
+                        <button class="hover:cursor-pointer hover:scale-80 transition duration-300">Register</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="buttom-header py-5 ">
+            <div class="container ">
+                <div class="row justify-between  text-[16px] ">
+                    <div class="">
+                        <img class="" src="./assets/image/public/logo.webp" alt="Raindbow logo" />
+                    </div>
+                    <nav class="max-md:hidden">
+                        <ul class="row md:gap-8 max-md:text-[12px] max-lg:text-[14px] gap-14">
+                            <li class="hover:text-primry hover:cursor-pointer">
+                                Home
+                            </li>
+                            <li class="hover:text-primry hover:cursor-pointer">
+                                Shop
+                            </li>
+                            <li class="hover:text-primry hover:cursor-pointer">
+                                Pages
+                            </li>
+                            <li class="hover:text-primry hover:cursor-pointer">
+                                Blogs
+                            </li>
+                            <li class="hover:text-primry hover:cursor-pointer">
+                                Contact
+                            </li>
+                        </ul>
+
+                    </nav>
+                    <div class="searchShoppigCart  row justify-between  gap-3  ">
+
+                        <div class="shoppingCart ">
+                            <img src="./assets/image/public/shopping cart.svg" alt="shopping Cart" />
+                        </div>
+                        <div class=" ">
+
+                            <form action="" class="border-2 border-[#b3b3b3] rounded-full h-10 relative  max-lg:w-30  ">
+                                <input type="text  " class="h-full outline-0 border-0 max-lg:w-30">
+                                <button type="submit"
+                                    class="bg-[#0f83b2] p-2.5 rounded-full flex items-center justify-center absolute right-0 bottom-0 ">
+                                    <img src="./assets/image/public/search.svg" alt="search"></button>
+                            </form>
+                        </div>
+                        <div class="md:hidden">
+                            <svg width="20px" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- End Header Section -->
+    <main>
+        <section class="nav py-10">
+            <div class="container">
+                <div class="row gap-2">
+                    <a href="./index.html">Home</a>/
+                    <a href="./index.html">Products</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="grid grid-cols-4 gap-10 h-screen">
+
+                    <div class="left-side max-md:hidden md:col-span-1 col gap-10  ">
+                        <div class="itemlist rounded-lg border-2 border-[#D4D4D4] col gap-6 items-start p-5 w-full">
+                            <p class="font-extrabold text-lg">Product categories</p>
+                            <nav>
+                                <ul class="col gap-5 items-start pe-4">
+                                    <li><a href="#">+ Playsets</a></li>
+                                    <li><a href="#">+ Control Toys</a></li>
+                                    <li><a href="#">+ Educational Toys</a></li>
+                                    <li><a href="#">+ Eco- Friendly Toys</a></li>
+                                    <li><a href="#">+ Stuffed Toys</a></li>
+                                    <li><a href="#">+ Type 1</a></li>
+                                    <li><a href="#">+ Type 2</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="filter rounded-lg border-2 border-[#D4D4D4] col gap-6 items-start p-5 w-full">
+                            <p class="font-extrabold text-lg">Filter by price</p>
+                            <div class="w-full max-w-xs">
+                                <input type="range" min="20" max="200" value="90" class="range range-primary " />
+                                <div class="flex justify-between px-2.5 mt-2 text-xs">
+                                    <span>20$</span>
+
+                                    <span>200$</span>
+                                </div>
+
+                            </div>
+                            <div class="row justify-end w-full">
+                                <button
+                                    class="shopNow bg-[#0f83b2] border-[#0f83b2] text-white transition-all delay-75 cursor-pointer">
+                                    Apply Now
+                                </button>
+
+                            </div>
+                        </div>
+                        <div
+                            class="populer-product rounded-lg border-2 border-[#D4D4D4] col gap-2 items-start ps-3 w-full">
+                            <div class="populerItem grid grid-cols-3 gap-2 items-center">
+                                <div class="populerImage border-[#D4D4D4] col-span-1">
+                                    <img src="./assets/image/populer_product/horse.webp" alt="horse">
+                                </div>
+                                <div class="populerInfo col gap-2 col-span-2 py-3 items-start">
+                                    <h3 class="text-[15px]">Magna etiam tempor orci</h3>
+                                    <p class="populerprice">$39.00</p>
+                                    <div class="row gap-0">
+                                        <img src="./assets/image/public/Star-full.svg" alt="">
+                                        <img src="./assets/image/public/Star-full.svg" alt="">
+                                        <img src="./assets/image/public/Star-full.svg" alt="">
+                                        <img src="./assets/image/public/Star-full.svg" alt="">
+                                        <img src="./assets/image/public/Star-full.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="populerItem grid grid-cols-3 gap-2 items-center">
+                                <div class="populerImage border-[#D4D4D4] col-span-1">
+                                    <img src="./assets/image/populer_product/lego.webp" alt="horse">
+                                </div>
+                                <div class="populerInfo col gap-2 col-span-2 py-3 items-start">
+                                    <h3 class="text-[15px]">Tortor at auctor </h3>
+                                    <p class="populerprice">$39.00</p>
+                                    <div class="row gap-0">
+                                        <img src="./assets/image/public/Star-full.svg" alt="">
+                                        <img src="./assets/image/public/Star-full.svg" alt="">
+                                        <img src="./assets/image/public/Star-full.svg" alt="">
+                                        <img src="./assets/image/public/Star-full.svg" alt="">
+                                        <img src="./assets/image/public/Star-full.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="populerItem grid grid-cols-3 gap-2 items-center ">
+                                <div class="populerImage border-[#D4D4D4] col-span-1">
+                                    <img src="./assets/image/populer_product/pysecle.webp" alt="horse">
+                                </div>
+                                <div class="populerInfo col gap-2 col-span-2 py-3 items-start">
+                                    <h3 class="text-[15px]">Hape scoot-around</h3>
+                                    <p class="populerprice">$39.00</p>
+                                    <div class="row gap-0">
+                                        <img src="./assets/image/public/Star-full.svg" alt="">
+                                        <img src="./assets/image/public/Star-full.svg" alt="">
+                                        <img src="./assets/image/public/Star-full.svg" alt="">
+                                        <img src="./assets/image/public/Star-full.svg" alt="">
+                                        <img src="./assets/image/public/Star-full.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="right-side max-md:col-span-4 md:col-span-3 col lg:justify-start max-lg:justify-center items-start gap-5">
+                        <h3>Educational Toys</h3>
+                        <div class="sorting-info row justify-between w-full">
+                            
+                            <div class="sorting-type row gap-10 ">
+                                
+                                <div class="SortingIcon row gap-4 max-md:hidden">
+
+                                    <i class="fas fa-th-large fa-lg text-primry"></i>
+                                    <i class="fa-solid fa-list fa-lg text-muted"></i>
+
+
+                                </div>
+                                <span class="sortingList text-[12px] max-md:hidden">Default sorting</span>
+                                <div class="drawer md:hidin">
+                                <input id="my-drawer-1" type="checkbox" class="drawer-toggle" />
+                                <div class="drawer-content">
+                                    <!-- Page content here -->
+                                    <label for="my-drawer-1" class="">
+                                        <div class="md:hidden">
+                                            <svg width="30px" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                                <path
+                                                    d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
+                                            </svg>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="drawer-side">
+                                    <label for="my-drawer-1" aria-label="close sidebar" class="drawer-overlay"></label>
+                                    <div class="menu bg-base-200 min-h-full w-80 p-4">
+                                        <!-- Sidebar content here -->
+                                        <li><a>
+                                                <div class="left-side  md:col-span-1 col gap-10  ">
+                                                    <div
+                                                        class="itemlist rounded-lg border-2 border-[#D4D4D4] col gap-6 items-start p-5 w-full">
+                                                        <p class="font-extrabold text-lg">Product categories</p>
+                                                        <nav>
+                                                            <ul class="col gap-5 items-start pe-4">
+                                                                <li><a href="#">+ Playsets</a></li>
+                                                                <li><a href="#">+ Control Toys</a></li>
+                                                                <li><a href="#">+ Educational Toys</a></li>
+                                                                <li><a href="#">+ Eco- Friendly Toys</a></li>
+                                                                <li><a href="#">+ Stuffed Toys</a></li>
+                                                                <li><a href="#">+ Type 1</a></li>
+                                                                <li><a href="#">+ Type 2</a></li>
+                                                            </ul>
+                                                        </nav>
+                                                    </div>
+                                                    <div
+                                                        class="filter rounded-lg border-2 border-[#D4D4D4] col gap-6 items-start p-5 w-full">
+                                                        <p class="font-extrabold text-lg">Filter by price</p>
+                                                        <div class="w-full max-w-xs">
+                                                            <input type="range" min="20" max="200" value="90"
+                                                                class="range range-primary " />
+                                                            <div class="flex justify-between px-2.5 mt-2 text-xs">
+                                                                <span>20$</span>
+
+                                                                <span>200$</span>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="row justify-end w-full">
+                                                            <button
+                                                                class="shopNow bg-[#0f83b2] border-[#0f83b2] text-white transition-all delay-75 cursor-pointer">
+                                                                Apply Now
+                                                            </button>
+
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="populer-product rounded-lg border-2 border-[#D4D4D4] col gap-2 items-start ps-3 w-full">
+                                                        <div class="populerItem grid grid-cols-3 gap-2 items-center">
+                                                            <div class="populerImage border-[#D4D4D4] col-span-1">
+                                                                <img src="./assets/image/populer_product/horse.webp"
+                                                                    alt="horse">
+                                                            </div>
+                                                            <div
+                                                                class="populerInfo col gap-2 col-span-2 py-3 items-start">
+                                                                <h3 class="text-[15px]">Magna etiam tempor orci</h3>
+                                                                <p class="populerprice">$39.00</p>
+                                                                <div class="row gap-0">
+                                                                    <img src="./assets/image/public/Star-full.svg"
+                                                                        alt="">
+                                                                    <img src="./assets/image/public/Star-full.svg"
+                                                                        alt="">
+                                                                    <img src="./assets/image/public/Star-full.svg"
+                                                                        alt="">
+                                                                    <img src="./assets/image/public/Star-full.svg"
+                                                                        alt="">
+                                                                    <img src="./assets/image/public/Star-full.svg"
+                                                                        alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="populerItem grid grid-cols-3 gap-2 items-center">
+                                                            <div class="populerImage border-[#D4D4D4] col-span-1">
+                                                                <img src="./assets/image/populer_product/lego.webp"
+                                                                    alt="horse">
+                                                            </div>
+                                                            <div
+                                                                class="populerInfo col gap-2 col-span-2 py-3 items-start">
+                                                                <h3 class="text-[15px]">Tortor at auctor </h3>
+                                                                <p class="populerprice">$39.00</p>
+                                                                <div class="row gap-0">
+                                                                    <img src="./assets/image/public/Star-full.svg"
+                                                                        alt="">
+                                                                    <img src="./assets/image/public/Star-full.svg"
+                                                                        alt="">
+                                                                    <img src="./assets/image/public/Star-full.svg"
+                                                                        alt="">
+                                                                    <img src="./assets/image/public/Star-full.svg"
+                                                                        alt="">
+                                                                    <img src="./assets/image/public/Star-full.svg"
+                                                                        alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="populerItem grid grid-cols-3 gap-2 items-center ">
+                                                            <div class="populerImage border-[#D4D4D4] col-span-1">
+                                                                <img src="./assets/image/populer_product/pysecle.webp"
+                                                                    alt="horse">
+                                                            </div>
+                                                            <div
+                                                                class="populerInfo col gap-2 col-span-2 py-3 items-start">
+                                                                <h3 class="text-[15px]">Hape scoot-around</h3>
+                                                                <p class="populerprice">$39.00</p>
+                                                                <div class="row gap-0">
+                                                                    <img src="./assets/image/public/Star-full.svg"
+                                                                        alt="">
+                                                                    <img src="./assets/image/public/Star-full.svg"
+                                                                        alt="">
+                                                                    <img src="./assets/image/public/Star-full.svg"
+                                                                        alt="">
+                                                                    <img src="./assets/image/public/Star-full.svg"
+                                                                        alt="">
+                                                                    <img src="./assets/image/public/Star-full.svg"
+                                                                        alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </a></li>
+                                        <li><a>Sidebar Item 2</a></li>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <p class="max-md:text-[12px]">Showing 1-9 of 24 results</p>
+                        </div>
+
+                        <div
+                            class="product grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 max-sm:grid-cols-1  gap-y-6 gap-x-1 justify-items-center w-full">
+                            <div class="card bg-base-100  w-55 border-0">
+                                <figure class="w-full ">
+                                    <img src="./assets/image/TopPocks/bycecl.webp" alt="Shoes" />
+                                </figure>
+                                <div
+                                    class="absolute lg:top-6 lg:right-8 max-md:top-6 max-md:right-8  md:top-2 md:right-3 col ">
+                                    <button><img src="./assets/image/public/favorite.svg" alt="favorite" /></button>
+                                    <button><img src="./assets/image/public/cart.svg" alt="cart"> </button>
+                                </div>
+                                <div class="absolute lg:left-6 lg:top-5 max-md:left-6 max-md:top-5 md:left-3 md:top-2">
+                                    <img src="./assets/image/public/Sale.webp" alt="SALE">
+                                </div>
+                                <div class="card-body">
+                                    <h2 class="card-title text-[15px] font-black text-[15px] font-black">Magna
+                                        etiam tempor orci</h2>
+                                    <p>
+                                        <span class="price font-bold text-green-600">$29.00 </span>
+                                        <span class="discoutnt_price text-muted line-through">$39.00</span>
+                                    </p>
+                                    <div class="card-actions justify-start row gap-0.5 ">
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-base-100  w-55   border-0">
+                                <figure class="w-full ">
+                                    <img src="./assets/image/TopPocks/cars.webp" alt="Shoes" />
+                                </figure>
+                                <div
+                                    class="absolute lg:top-6 lg:right-8 max-md:top-6 max-md:right-8  md:top-2 md:right-3 col ">
+                                    <button><img src="./assets/image/public/favorite.svg" alt="favorite" /></button>
+                                    <button><img src="./assets/image/public/cart.svg" alt="cart"> </button>
+                                </div>
+                                <div class="absolute lg:left-6 lg:top-5 max-md:left-6 max-md:top-5 md:left-3 md:top-2">
+                                    <img src="./assets/image/public/Sale.webp" alt="SALE">
+                                </div>
+                                <div class="card-body">
+                                    <h2 class="card-title text-[15px] font-black">Magna etiam tempor orci</h2>
+                                    <p>
+                                        <span class="price font-bold text-green-600">$29.00 </span>
+                                        <span class="discoutnt_price text-muted line-through">$39.00</span>
+                                    </p>
+                                    <div class="card-actions justify-start row gap-0.5 ">
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-base-100  w-55   border-0">
+                                <figure class="w-full ">
+                                    <img src="./assets/image/TopPocks/colors.webp" alt="Shoes" />
+                                </figure>
+                                <div
+                                    class="absolute lg:top-6 lg:right-8 max-md:top-6 max-md:right-8  md:top-2 md:right-3 col ">
+                                    <button><img src="./assets/image/public/favorite.svg" alt="favorite" /></button>
+                                    <button><img src="./assets/image/public/cart.svg" alt="cart"> </button>
+                                </div>
+                                <div class="absolute lg:left-6 lg:top-5 max-md:left-6 max-md:top-5 md:left-3 md:top-2">
+                                    <img src="./assets/image/public/Sale.webp" alt="SALE">
+                                </div>
+                                <div class="card-body">
+                                    <h2 class="card-title text-[15px] font-black">Magna etiam tempor orci</h2>
+                                    <p>
+                                        <span class="price font-bold text-green-600">$29.00 </span>
+                                        <span class="discoutnt_price text-muted line-through">$39.00</span>
+                                    </p>
+                                    <div class="card-actions justify-start row gap-0.5 ">
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-base-100  w-55   border-0">
+                                <figure class="w-full ">
+                                    <img src="./assets/image/TopPocks/hours.webp" alt="Shoes" />
+                                </figure>
+                                <div
+                                    class="absolute lg:top-6 lg:right-8 max-md:top-6 max-md:right-8  md:top-2 md:right-3 col ">
+                                    <button><img src="./assets/image/public/favorite.svg" alt="favorite" /></button>
+                                    <button><img src="./assets/image/public/cart.svg" alt="cart"> </button>
+                                </div>
+                                <div class="absolute lg:left-6 lg:top-5 max-md:left-6 max-md:top-5 md:left-3 md:top-2">
+                                    <img src="./assets/image/public/Sale.webp" alt="SALE">
+                                </div>
+                                <div class="card-body">
+                                    <h2 class="card-title text-[15px] font-black">Magna etiam tempor orci</h2>
+                                    <p>
+                                        <span class="price font-bold text-green-600">$29.00 </span>
+                                        <span class="discoutnt_price text-muted line-through">$39.00</span>
+                                    </p>
+                                    <div class="card-actions justify-start row gap-0.5 ">
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-base-100  w-55   border-0">
+                                <figure class="w-full ">
+                                    <img src="./assets/image/TopPocks/lego.webp" alt="Shoes" />
+                                </figure>
+                                <div
+                                    class="absolute lg:top-6 lg:right-8 max-md:top-6 max-md:right-8  md:top-2 md:right-3 col ">
+                                    <button><img src="./assets/image/public/favorite.svg" alt="favorite" /></button>
+                                    <button><img src="./assets/image/public/cart.svg" alt="cart"> </button>
+                                </div>
+                                <div class="absolute lg:left-6 lg:top-5 max-md:left-6 max-md:top-5 md:left-3 md:top-2">
+                                    <img src="./assets/image/public/Sale.webp" alt="SALE">
+                                </div>
+                                <div class="card-body">
+                                    <h2 class="card-title text-[15px] font-black">Magna etiam tempor orci</h2>
+                                    <p>
+                                        <span class="price font-bold text-green-600">$29.00 </span>
+                                        <span class="discoutnt_price text-muted line-through">$39.00</span>
+                                    </p>
+                                    <div class="card-actions justify-start row gap-0.5 ">
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-base-100  w-55   border-0">
+                                <figure class="w-full ">
+                                    <img src="./assets/image/TopPocks/cars.webp" alt="Shoes" />
+                                </figure>
+                                <div
+                                    class="absolute lg:top-6 lg:right-8 max-md:top-6 max-md:right-8  md:top-2 md:right-3 col ">
+                                    <button><img src="./assets/image/public/favorite.svg" alt="favorite" /></button>
+                                    <button><img src="./assets/image/public/cart.svg" alt="cart"> </button>
+                                </div>
+                                <div class="absolute lg:left-6 lg:top-5 max-md:left-6 max-md:top-5 md:left-3 md:top-2">
+                                    <img src="./assets/image/public/Sale.webp" alt="SALE">
+                                </div>
+                                <div class="card-body">
+                                    <h2 class="card-title text-[15px] font-black">Magna etiam tempor orci</h2>
+                                    <p>
+                                        <span class="price font-bold text-green-600">$29.00 </span>
+                                        <span class="discoutnt_price text-muted line-through">$39.00</span>
+                                    </p>
+                                    <div class="card-actions justify-start row gap-0.5 ">
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-base-100  w-55   border-0">
+                                <figure class="w-full ">
+                                    <img src="./assets/image/TopPocks/lego.webp" alt="Shoes" />
+                                </figure>
+                                <div
+                                    class="absolute lg:top-6 lg:right-8 max-md:top-6 max-md:right-8  md:top-2 md:right-3 col ">
+                                    <button><img src="./assets/image/public/favorite.svg" alt="favorite" /></button>
+                                    <button><img src="./assets/image/public/cart.svg" alt="cart"> </button>
+                                </div>
+                                <div class="absolute lg:left-6 lg:top-5 max-md:left-6 max-md:top-5 md:left-3 md:top-2">
+                                    <img src="./assets/image/public/Sale.webp" alt="SALE">
+                                </div>
+                                <div class="card-body">
+                                    <h2 class="card-title text-[15px] font-black">Magna etiam tempor orci</h2>
+                                    <p>
+                                        <span class="price font-bold text-green-600">$29.00 </span>
+                                        <span class="discoutnt_price text-muted line-through">$39.00</span>
+                                    </p>
+                                    <div class="card-actions justify-start row gap-0.5 ">
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-base-100  w-55   border-0">
+                                <figure class="w-full ">
+                                    <img src="./assets/image/TopPocks/hours.webp" alt="Shoes" />
+                                </figure>
+                                <div
+                                    class="absolute lg:top-6 lg:right-8 max-md:top-6 max-md:right-8  md:top-2 md:right-3 col ">
+                                    <button><img src="./assets/image/public/favorite.svg" alt="favorite" /></button>
+                                    <button><img src="./assets/image/public/cart.svg" alt="cart"> </button>
+                                </div>
+                                <div class="absolute lg:left-6 lg:top-5 max-md:left-6 max-md:top-5 md:left-3 md:top-2">
+                                    <img src="./assets/image/public/Sale.webp" alt="SALE">
+                                </div>
+                                <div class="card-body">
+                                    <h2 class="card-title text-[15px] font-black">Magna etiam tempor orci</h2>
+                                    <p>
+                                        <span class="price font-bold text-green-600">$29.00 </span>
+                                        <span class="discoutnt_price text-muted line-through">$39.00</span>
+                                    </p>
+                                    <div class="card-actions justify-start row gap-0.5 ">
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+                                        <img src="./assets/image/public/Star-full.svg" alt="" />
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="pagonation"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
